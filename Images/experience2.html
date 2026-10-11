@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expérience sur l'influence de la couleur de la lumière sur une cellule photovoltaïque.">
+  <title>Expérience 02 — Couleur de la lumière</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="Images/favicon.jpg" type="image/jpeg">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">☼</span>
+        <span>Énergie solaire</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="experience1.html">Expérience 01</a>
+        <a class="active" href="experience2.html">Expérience 02</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="experiment-header container">
+      <p class="eyebrow">Expérience 02 · Optique</p>
+      <h1>L’influence de la couleur de la lumière</h1>
+      <p class="lead">
+        Étudier l’influence de la couleur de la lumière incidente
+        sur la tension électrique produite.
+      </p>
+    </section>
+
+    <div class="container experiment-layout">
+      <article class="content-column">
+        <section class="content-section problem-box">
+          <p class="section-label">Problématique</p>
+          <p>
+            Comment la couleur de la lumière incidente influence-t-elle
+            l'éclairement et donc la tension produite ?
+          </p>
+        </section>
+
+        <section class="content-section">
+          <h2>Hypothèse</h2>
+          <p>
+            On suppose que la tension produite varie selon la longueur d’onde
+            de la lumière reçue. Les photons de courte longueur d’onde, comme
+            ceux de la lumière bleue, possèdent davantage d’énergie que les
+            photons de grande longueur d’onde, comme ceux de la lumière rouge.
+            Cependant, la tension mesurée dépend également de la réponse
+            spectrale de la cellule et de la quantité de lumière transmise par
+            chaque filtre.
+          </p>
+        </section>
+
+        <section class="content-section">
+          <h2>Matériel</h2>
+          <ul class="material-list">
+            <li>Un multimètre</li>
+            <li>Un panneau photovoltaïque</li>
+            <li>Un luxmètre</li>
+            <li>Une lampe (type : incandescente)</li>
+            <li>Une salle obscure</li>
+            <li>Des films transparents colorés</li>
+          </ul>
+        </section>
+
+        <section class="content-section">
+          <h2>Protocole expérimental</h2>
+
+          <div class="step-block">
+            <h3><span>01</span> Mise en place</h3>
+            <ol>
+              <li>Placer la cellule face à la lampe, à distance et inclinaison fixes.</li>
+              <li>Connecter la cellule au multimètre.</li>
+              <li>Placer le luxmètre à proximité de la cellule.</li>
+              <li>Relever la tension initiale sans filtre et mesurer l’éclairement.</li>
+            </ol>
+          </div>
+
+          <div class="step-block">
+            <h3><span>02</span> Mesures avec les filtres colorés</h3>
+            <ol>
+              <li>Placer successivement chaque filtre coloré devant la lampe.</li>
+              <li>Pour chaque filtre, mesurer la tension aux bornes de la résistance.</li>
+              <li>Relever également l’éclairement indiqué par le luxmètre.</li>
+              <li>Répéter les mesures plusieurs fois pour chaque couleur.</li>
+              <li>Conserver les mêmes conditions expérimentales.</li>
+            </ol>
+          </div>
+
+          <div class="step-block">
+            <h3><span>03</span> Comparaison des résultats</h3>
+            <ol>
+              <li>Comparer les tensions obtenues avec les différents filtres.</li>
+              <li>Associer chaque couleur à une longueur d’onde approximative.</li>
+              <li>Comparer les résultats à l’hypothèse de départ.</li>
+              <li>Prendre en compte le fait que les filtres ne transmettent pas tous la même quantité de lumière.</li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="content-section">
+          <div class="section-title-row">
+            <div>
+              <p class="section-label">Données expérimentales</p>
+              <h2>Tableau de mesures</h2>
+            </div>
+          </div>
+
+          <div class="table-wrapper">
+            <table data-table-id="couleur">
+              <thead>
+                <tr>
+                  <th>Couleur du filtre</th>
+                  <th>Longueur d’onde approx. (nm)</th>
+                  <th>Éclairement (lux)</th>
+                  <th>Tension (V)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Sans filtre</td> <td>400 – 700</td> <td>411</td> <td>16.01</td></tr>
+                <tr><td>Rouge</td>       <td>620 – 700</td> <td>122</td> <td>12.36</td></tr>
+                <tr><td>Orange</td>      <td>590 – 620</td> <td>200</td> <td>14.05</td></tr>
+                <tr><td>Jaune</td>       <td>570 – 590</td> <td>297</td> <td>15.18</td></tr>
+                <tr><td>Vert</td>        <td>495 – 570</td> <td>275</td> <td>15.03</td></tr>
+                <tr><td>Bleu</td>        <td>450 – 495</td> <td>87</td>  <td>10.30</td></tr>
+              </tbody>
+            </table><br>
+
+            <div style="text-align: center;">
+              <img src="Images/schema_spectre_visible.png" alt="Schéma des longueurs d'onde du spectre visible">
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section formula-card">
+          <p class="section-label">Relation scientifique</p>
+          <div class="formula">E = hc / λ</div>
+          <p>
+            L’énergie d’un photon est inversement proportionnelle à sa
+            longueur d’onde.
+          </p>
+        </section>
+
+        <section class="content-section expected-result">
+          <p class="section-label">Analyse des résultats</p>
+          <h2>Résultat et conclusion</h2>
+          <p>
+            Ces résultats montrent plusieurs choses intéressantes.<br>
+            Premièrement, la tension et l’éclairement sont maximaux pour la lumière sans filtre. <br><br>
+            Sans filtre, la cellule produit 16,01 V. Chaque filtre fait baisser la tension, de 5,2 % pour le jaune à 35,7 % pour le bleu : la couleur de la lumière a donc bien une influence.
+            Le classement des tensions (jaune > vert > orange > rouge > bleu) est donc exactement celui des éclairements (297 > 275 > 200 > 122 > 87 lux).
+            La tension dépend donc surtout de la quantité de lumière reçue par la cellule.<br><br>
+
+            Ensuite, un photon bleu (450 nm) a plus d’énergie qu’un photon rouge (700 nm). Avec la formule E = h × c / λ, <br>
+            on obtient pour le bleu E = 6,63×10⁻³⁴ × 3,00×10⁸ / 450×10⁻⁹ = 4,42×10⁻¹⁹ J, soit 2,76 eV, <br>
+            contre 2,84×10⁻¹⁹ J, soit 1,78 eV, pour le rouge. <br>
+            Pourtant, le filtre bleu produit seulement 10,30 V alors que le filtre rouge produit 12,36 V. <br>
+            La tension ne dépend donc pas seulement de l’énergie d’un photon mais surtout de la quantité de lumière reçue par la cellule.
+            Ce qui confirme que d’autres facteurs interviennent, comme prévu dans notre hypothèse.
+          </p>
+        </section>
+
+        <section class="content-section expected-result">
+          <p class="section-label">Approfondissement des résultats</p>
+          <h2>Ouverture</h2>
+          <h3>Comment expliquer le résultat du bleu ?</h3>
+          <p>
+            Avec E = hc / λ, un photon bleu (450 nm) a environ 2,76 eV contre 1,8 eV pour un photon rouge (700 nm). <br>
+            Mais dans une cellule en silicium, un photon libère un seul électron dès que son énergie dépasse environ 1,1 eV ; le surplus est perdu en chaleur. <a href="https://en.wikipedia.org/wiki/Shockley%E2%80%93Queisser_limit" style="text-decoration: underline;" target="_blank">"limite de Shockley-Queisser"</a><br>
+            Ce qui compte, c'est donc le nombre de photons absorbés, pas l'énergie de chacun. <br>
+            De plus, d’une part, le filtre bleu laisse passer moins de lumière et la lampe émet probablement moins de bleu car c'est une lampe incandescente, donc il arrive moins de photons sur le panneau. <br>
+            D’autre part, le panneau en silicium est plus efficace avec la lumière rouge qu’avec la lumière bleue. <br><br>
+            On peut donc conclure que la tension dépend du nombre de photons reçus et de l’efficacité du panneau pour ces longueurs d'onde
+            <a href="https://fr.libtestchamber.com/blog/what-is-the-spectral-response-of-a-solar-panel-and-its-impact-on-performance-2237026.html" style="text-decoration: underline;" target="_blank">(réponse spectrale)</a>,
+            pas seulement de l’énergie de chaque photon.
+          </p>
+        </section>
+
+        <section class="content-section expected-result">
+          <p class="section-label">Pour une prochaine fois :</p>
+          <h2>Limites de l'expérience</h2>
+          <h3>Comment aurions-nous pu améliorer l'expérience ?</h3>
+          <ol>
+            <li>Pour aller plus loin, on pourrait utiliser des LED de couleur pour ne plus dépendre des filtres car ils laissent passer des plages de longueurs d'onde et non pas des valeurs précises.</li>
+            <li>Tester un autre type de panneau pour comparer les résultats.</li>
+            <li>On aurait pu chercher non pas la tension à vide mais la puissance, <br>
+              sinon on ne peut pas parler de « meilleur rendement » : la puissance (U × I) serait plus pertinente.</li>
+            <li>Le luxmètre est calibré pour l’œil humain (sensible au jaune-vert), pas pour la cellule : les lux sont peu fiables pour comparer des couleurs.</li>
+            <li>La cellule chauffe sous la lampe, et il y a peu de mesures par filtre.</li>
+          </ol>
+        </section>
+
+        <div style="text-align: center;">
+          <img class="mon-element" src="Images/Exp2_Realisation.jpeg" alt="Réalisation de l'expérience 2" width="20%">
+          <a href="https://youtu.be/hEmODTcKJmE?si=BGf6txE_D2h1CIIy" style="text-decoration: underline;" target="_blank">lien bonus !!!!</a>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <nav class="page-navigation container" aria-label="Navigation entre les expériences">
+    <a class="button button-outline" href="experience1.html">← Expérience précédente</a>
+    <a class="button button-primary" href="index.html">← Retour à l’accueil</a>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>Projet scientifique — Énergie solaire</p>
+      <p>Expérience 02 · Couleur de la lumière</p>
+    </div>
+  </footer>
+</body>
+</html>
