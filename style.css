@@ -55,12 +55,23 @@ html {
 }
 
 body {
-  background: var(--background);
+  
+  background-color: var(--background);
+  background-image: url("Images/stickers_gauche.png"), url("Images/stickers_droite.png");
+  background-position: left top, right top;
+  background-repeat: repeat-y, repeat-y;
   color: var(--text);
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.7;
   animation: pageEnter 0.45s ease both;
+}
+
+.content-column,
+.intro-section,
+.experiments-section,
+.experiment-header {
+  background: rgba(247, 247, 244, 0.92);
 }
 
 @keyframes pageEnter {
